@@ -3,8 +3,8 @@ A simple application that shows how to integrate the Paystack SDK into your Andr
 accompanying guide that explains how you should go about your integration:
 
 <div float="left">
-    <img src="https://drive.google.com/file/d/1HFfmIO7HQ-9xgde85yt-l_dAvbvJZL2h/view" width="320" />
-    <img src="https://drive.google.com/file/d/1Vip9xUkumkNyL1JDWGCwv_M7HAfZwJ_O/view" width="320" />
+    <img src="https://drive.google.com/uc?export=view&id=1HFfmIO7HQ-9xgde85yt-l_dAvbvJZL2h" width="320" />
+    <img src="https://drive.google.com/uc?export=view&id=1Vip9xUkumkNyL1JDWGCwv_M7HAfZwJ_O" width="320" />
 </div>
 
 
