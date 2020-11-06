@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="white">#FFFFFFFF</color>
+    <color name="silver_400">#CBC9C9</color>
+    <color name="azac_500">#DEB334</color>
+    <color name="cod_gray_900">#171516</color>
+    // this is used to modify the default border color of a text input
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#CBC9C9</color>
+</resources>
