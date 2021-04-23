@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val price  = 4000
+        val price  = 2000
         val mCheckout: Button = findViewById(R.id.btn_checkout)
         mCheckout.setOnClickListener {
             val intent = Intent(this, CheckoutActivity::class.java).apply {

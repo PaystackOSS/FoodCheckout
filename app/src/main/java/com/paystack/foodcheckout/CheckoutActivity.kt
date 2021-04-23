@@ -76,7 +76,7 @@ class CheckoutActivity : AppCompatActivity() {
 
         val charge = Charge()
         charge.amount = amount
-        charge.email = "customer@email.com"
+        charge.email = "damilola@test.com"
         charge.card = card
 
         PaystackSdk.chargeCard(this, charge, object : TransactionCallback {
