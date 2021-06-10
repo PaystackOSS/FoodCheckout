@@ -61,14 +61,14 @@ class CheckoutActivity : AppCompatActivity() {
     }
 
     private fun performCharge() {
-        // TODO - 5: Flesh out the performCharge method
-        // TODO - 5.1: Get the cardNumber, cardExpiry and cvv from the checkout form
-        // TODO - 5.2: Parse the cardNumber, cardExpiry and cvv to ensure they are ready for charge
-        // TODO - 5.3: Create a card object with the cardNumber, cardExpiry and cvv
+        // TODO - 4: Flesh out the performCharge method
+        // TODO - 5: Get the cardNumber, cardExpiry and cvv from the checkout form
+        // TODO - 6: Parse the cardNumber, cardExpiry and cvv to ensure they are ready for charge
+        // TODO - 7: Create a card object with the cardNumber, cardExpiry and cvv
 
-        // TODO - 6: Create a charge object
-        // TODO - 7: Charge card
+        // TODO - 8: Create a charge object
+        // TODO - 9: Charge card
     }
 
-    // TODO - 8: Create a parseResponse method to parse a successful response
+    // TODO - 10: Create a parseResponse method to parse a successful response
 }
