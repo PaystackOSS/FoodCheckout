@@ -23,14 +23,13 @@ class CheckoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
 
-        initializePaystack()
+
+        // TODO - 3: Call the initializePaystack method
         initializeFormVariables()
     }
 
-    private fun initializePaystack() {
-        PaystackSdk.initialize(applicationContext)
-        PaystackSdk.setPublicKey(BuildConfig.PSTK_PUBLIC_KEY)
-    }
+    // TODO - 1: Create the initializePaystack method
+    // TODO - 2: Initialize the Paystack SDK in the initializePaystack method
 
     private fun initializeFormVariables() {
         mCardNumber = findViewById(R.id.til_card_number)
@@ -62,42 +61,14 @@ class CheckoutActivity : AppCompatActivity() {
     }
 
     private fun performCharge() {
-        val cardNumber = mCardNumber.editText!!.text.toString()
-        val cardExpiry = mCardExpiry.editText!!.text.toString()
-        val cvv = mCardCVV.editText!!.text.toString()
+        // TODO - 5: Flesh out the performCharge method
+        // TODO - 5.1: Get the cardNumber, cardExpiry and cvv from the checkout form
+        // TODO - 5.2: Parse the cardNumber, cardExpiry and cvv to ensure they are ready for charge
+        // TODO - 5.3: Create a card object with the cardNumber, cardExpiry and cvv
 
-        val cardExpiryArray = cardExpiry.split("/").toTypedArray()
-        val expiryMonth = cardExpiryArray[0].toInt()
-        val expiryYear = cardExpiryArray[1].toInt()
-        var amount = intent.getIntExtra(getString(R.string.meal_name), 0)
-        amount *= 100
-
-        val card = Card(cardNumber, expiryMonth, expiryYear, cvv)
-
-        val charge = Charge()
-        charge.amount = amount
-        charge.email = "damilola@test.com"
-        charge.card = card
-
-        PaystackSdk.chargeCard(this, charge, object : TransactionCallback {
-            override fun onSuccess(transaction: Transaction) {
-                parseResponse(transaction.reference)
-            }
-
-            override fun beforeValidate(transaction: Transaction) {
-                Log.d("Main Activity", "beforeValidate: " + transaction.reference)
-            }
-
-            override fun onError(error: Throwable, transaction: Transaction) {
-                Log.d("Main Activity", "onError: " + error.localizedMessage)
-                Log.d("Main Activity", "onError: $error")
-            }
-        })
+        // TODO - 6: Create a charge object
+        // TODO - 7: Charge card
     }
 
-    private fun parseResponse(transactionReference: String) {
-        val message = "Payment Successful - $transactionReference"
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-        Log.d("Payment success: ", transactionReference)
-    }
+    // TODO - 8: Create a parseResponse method to parse a successful response
 }
