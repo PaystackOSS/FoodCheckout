@@ -15,7 +15,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "PSTK_PUBLIC_KEY", PSTK_PUBLIC_KEY)
+//        buildConfigField("String", "PSTK_PUBLIC_KEY", PSTK_PUBLIC_KEY)
     }
 
     buildTypes {

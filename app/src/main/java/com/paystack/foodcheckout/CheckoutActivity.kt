@@ -1,17 +1,13 @@
 package com.paystack.foodcheckout
 
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import co.paystack.android.Paystack.TransactionCallback
 import co.paystack.android.PaystackSdk
-import co.paystack.android.Transaction
-import co.paystack.android.model.Card
-import co.paystack.android.model.Charge
 import com.google.android.material.textfield.TextInputLayout
 
 class CheckoutActivity : AppCompatActivity() {
@@ -23,13 +19,23 @@ class CheckoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
 
-
         // TODO - 3: Call the initializePaystack method
         initializeFormVariables()
     }
 
     // TODO - 1: Create the initializePaystack method
     // TODO - 2: Initialize the Paystack SDK in the initializePaystack method
+
+    private fun getKey (): String {
+        val apiKey: String
+        applicationContext.packageManager
+                .getApplicationInfo(packageName, PackageManager.GET_META_DATA)
+                .apply {
+                    apiKey = metaData.getString("co.paystack.android.PublicKey", "")
+                }
+
+        return apiKey
+    }
 
     private fun initializeFormVariables() {
         mCardNumber = findViewById(R.id.til_card_number)
