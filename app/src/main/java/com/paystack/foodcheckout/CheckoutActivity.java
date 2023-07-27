@@ -89,6 +89,8 @@ public class CheckoutActivity extends AppCompatActivity {
         Card card = new Card(cardNumber, expiryMonth, expiryYear, cvv);
 
         Charge charge = new Charge();
+       // Set currency in case you're not using NGN
+        charge.setCurrency("KES");
         charge.setAmount(amount);
         charge.setEmail("customer@email.com");
         charge.setCard(card);
