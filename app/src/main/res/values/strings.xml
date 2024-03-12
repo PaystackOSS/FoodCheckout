@@ -5,9 +5,5 @@
         A properly seasoned patty topped with a slice of fresh tomato, cheese and lettuce enclosed in a
         fluffy bun. It’s accompanied with a side of fries with a sweet and spicy dip.
     </string>
-    <string name="meal_price">Pay &#x20A6;4,000</string>
-    <string name="payment_prompt">Card details</string>
-    <string name="card_number">Card Number</string>
-    <string name="card_expiry">Card Expiry</string>
-    <string name="card_cvv">CVV</string>
+    <string name="meal_price">Make Payment</string>
 </resources>
