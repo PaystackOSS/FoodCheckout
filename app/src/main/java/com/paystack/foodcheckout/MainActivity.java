@@ -7,9 +7,9 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.paystack.android_sdk.core.Paystack;
-import com.paystack.android_sdk.ui.paymentsheet.PaymentSheet;
-import com.paystack.android_sdk.ui.paymentsheet.PaymentSheetResult;
+import com.paystack.android.core.Paystack;
+import com.paystack.android.ui.paymentsheet.PaymentSheet;
+import com.paystack.android.ui.paymentsheet.PaymentSheetResult;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void makePayment() {
         // Pass access_code from transaction initialize call
-        paymentSheet.launch("br6cgmvflhn3qtd");
+        paymentSheet.launch("7jr49p2garqtjyc");
     }
 
     private void paymentComplete(PaymentSheetResult paymentSheetResult) {
