@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
-import com.paystack.android_sdk.core.Paystack
-import com.paystack.android_sdk.ui.paymentsheet.PaymentSheet
-import com.paystack.android_sdk.ui.paymentsheet.PaymentSheetResult
+import com.paystack.android.core.Paystack
+import com.paystack.android.ui.paymentsheet.PaymentSheet
+import com.paystack.android.ui.paymentsheet.PaymentSheetResult
 
 class MainActivity : AppCompatActivity() {
     private lateinit var paymentSheet: PaymentSheet
