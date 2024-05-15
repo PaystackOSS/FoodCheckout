@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun makePayment() {
         // Pass access_code from transaction initialize call
-        paymentSheet.launch("br6cgmvflhn3qtd")
+        paymentSheet.launch("rtz03myg0lbpe11")
     }
 
 
