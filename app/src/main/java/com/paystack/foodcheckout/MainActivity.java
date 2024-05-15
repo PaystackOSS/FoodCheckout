@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Paystack.builder()
-                .setPublicKey("pk_test_xxxxx")
+                .setPublicKey("pk_test_xxxx")
                 .setLoggingEnabled(true)
                 .build();
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void makePayment() {
         // Pass access_code from transaction initialize call
-        paymentSheet.launch("7jr49p2garqtjyc");
+        paymentSheet.launch("rlv8m1tqz4z5uno");
     }
 
     private void paymentComplete(PaymentSheetResult paymentSheetResult) {

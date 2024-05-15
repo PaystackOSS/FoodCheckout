@@ -36,5 +36,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // secondary dependencies
-    implementation 'com.paystack.android:paystack-ui:0.0.7'
+    implementation 'com.paystack.android:paystack-ui:0.0.8'
 }
